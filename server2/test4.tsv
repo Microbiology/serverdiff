@@ -1,0 +1,38 @@
+       -F RE  --show-function-line=RE
+              Show the most recent line matching RE.
+
+       -q  --brief
+              Output only whether files differ.
+
+       -e  --ed
+              Output an ed script.
+
+       --normal
+              Output a normal diff.
+
+       -n  --rcs
+              Output an RCS format diff.
+
+       -y  --side-by-side
+              Output in two columns.
+
+       -W NUM  --width=NUM
+              Output at most NUM (default 130) print columns.
+
+       --left-column
+              Output only the left column of common lines.
+
+       --suppress-common-lines
+              Do not output common lines.
+
+       -D NAME  --ifdef=NAME
+              Output merged file to show `#ifdef NAME' diffs.
+
+       --GTYPE-group-format=GFMT
+              Similar, but format GTYPE input groups with GFMT.
+
+       --line-format=LFMT
+              Similar, but format all input lines with LFMT.
+
+       --LTYPE-line-format=LFMT
+              Similar, but format LTYPE input lines with LFMT.
