@@ -12,8 +12,9 @@ from filecmp import dircmp
 def print_diff_files(dcmp):
     for name in dcmp.diff_files:
         print "Shared file with different content %s found in %s and %s" % (name, dcmp.left, dcmp.right)
-    for name in dcmp.common_files:
-        print "Common file %s found in %s and %s" % (name, dcmp.left, dcmp.right)
+    for name in dcmp.diff_files:
+        if dcmp.left_only : print "Directory %s uniquely contains %s" % (dcmp.left, dcmp.left_only)
+        if dcmp.right_only : print "Directory %s uniquely contains %s" % (dcmp.right, dcmp.right_only)
     for sub_dcmp in dcmp.subdirs.values():
         print_diff_files(sub_dcmp)
 
