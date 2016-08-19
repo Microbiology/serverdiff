@@ -1,7 +1,7 @@
 # serverdiff
 Simple method for describing differences between directories.
 
-A little beyond `diff` found in bash. This will detect different files **AND** shared files with different contents. A nice way to validate important data transfers.
+A little beyond `diff` found in bash. This will detect different files **AND** shared files with different contents in a customizable way (so go ahead and alter it to meet your needs). A nice way to validate important data transfers.
 
 Try running it on the example data:
 
